@@ -40,24 +40,12 @@ public class BlogPostService {
     public BlogPost update(Integer id, BlogPost details) {
         BlogPost existing = getById(id);
 
-        if (details.getTitle() != null) {
-            existing.setTitle(details.getTitle());
-        }
-        if (details.getContent() != null) {
-            existing.setContent(details.getContent());
-        }
-        if (details.getDocumentUrl() != null) {
-            existing.setDocumentUrl(details.getDocumentUrl());
-        }
-        if (details.getDocumentName() != null) {
-            existing.setDocumentName(details.getDocumentName());
-        }
-        if (details.getStatus() != null) {
-            existing.setStatus(details.getStatus());
-        }
-        if (details.getImageUrl() != null) { // Add this
-            existing.setImageUrl(details.getImageUrl());
-        }
+        existing.setTitle(details.getTitle());
+        existing.setContent(details.getContent());
+        existing.setDocumentUrl(details.getDocumentUrl()); // can be null
+        existing.setDocumentName(details.getDocumentName()); // can be null
+        existing.setStatus(details.getStatus());
+        existing.setImageUrl(details.getImageUrl()); // can be null (FIX)
 
         existing.setUpdatedAt(LocalDateTime.now());
         return repository.save(existing);
