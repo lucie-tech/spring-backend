@@ -1,0 +1,27 @@
+{"properties": [
+  {
+    "name": "file.max-size",
+    "type": "java.lang.String",
+    "description": "A description for 'file.max-size'"
+  },
+  {
+    "name": "research.allowed-extensions",
+    "type": "java.lang.String",
+    "description": "A description for 'research.allowed-extensions'"
+  },
+  {
+    "name": "product.allowed-extensions",
+    "type": "java.lang.String",
+    "description": "A description for 'product.allowed-extensions'"
+  },
+  {
+    "name": "jwt.secret",
+    "type": "java.lang.String",
+    "description": "A description for 'jwt.secret'"
+  },
+  {
+    "name": "jwt.expiration",
+    "type": "java.lang.String",
+    "description": "A description for 'jwt.expiration'"
+  }
+]}

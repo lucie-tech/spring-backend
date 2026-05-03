@@ -1,0 +1,53 @@
+﻿# Compiled class files
+*.class
+target/
+out/
+
+# Log files
+*.log
+logs/
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Maven
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Application specific (sensitive data)
+application.properties.local
+application-dev.properties
+application-prod.properties
+
+# Database
+*.db
+*.sqlite
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Package files
+*.jar
+*.war
+*.zip
+*.tar.gz
